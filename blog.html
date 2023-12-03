@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Dishani Sen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="app"></div>
+
+    <script type="text/babel">
+        function App() {
+            const [darkMode, setDarkMode] = React.useState(true);
+
+            const toggleDarkMode = () => {
+                setDarkMode(!darkMode);
+            };
+
+            return (
+                <div className={`${darkMode ? 'bg-gray-900' : 'bg-white text-gray-900'} transition duration-500 ease-in-out`}>
+                    <div className="container mx-auto px-4" style={{ width: '70%' }}>
+                        <header className="flex justify-between items-center py-6">
+                            <a href="./index.html"><h1 className="text-2xl font-bold">DISHANI SEN</h1></a>
+                            <nav className="flex items-center">
+                                <a href="./blog.html" className={`${darkMode ? 'text-white' : 'text-gray-900'} px-4`}>About</a>
+                                <a href="./about.html" className={`${darkMode ? 'text-white' : 'text-gray-900'} px-4`}>Blog</a>
+                                <a href="./resume.pdf" className={`${darkMode ? 'text-white' : 'text-gray-900'} px-4`} target="_blank">Resume</a>
+                                <button onClick={toggleDarkMode} className="ml-4">
+                                    <i className={`fas ${darkMode ? 'fa-sun' : 'fa-moon'}`}></i>
+                                </button>
+                            </nav>
+                        </header>
+                        <main>
+                        <section>
+                            <h2 className="text-4xl font-bold mb-4">Blog</h2>
+                            <p className="mb-12">This is where I write. Subscribe to my <a href="#" className="text-blue-500 hover:underline">newsletter</a> to get future posts straight to your inbox.</p>
+                            <article className="mb-8">
+                                <a href="./blog1.html"><h3 className="text-2xl mb-2"> 🔒 What is data circularity, and why should you care?</h3></a>
+                                <p className="text-gray-400">Dec 3, 2023 • 8 min • Data</p>
+                            </article>
+                        </section>
+                    </main>
+                        <footer className="flex justify-between items-center py-6">
+                            <p>© Dishani Sen</p>
+                            <div className="flex space-x-4">
+                                <a href="https://x.com/iamdishanisen" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`} target="_blank"><i className="fab fa-twitter"></i></a>
+                                <a href="https://Instagram.com/itsmedishani" className={`${darkMode ? 'text-pink-600' : 'text-pink-400'}`} target="_blank"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.LinkedIn.com/in/dishanisen" className={`${darkMode ? 'text-blue-700' : 'text-blue-500'}`} target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/dishanisen" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`} target="_blank"><i className="fab fa-github"></i></a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+</html>

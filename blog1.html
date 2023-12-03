@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title>Dishani Sen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <div id="app"></div>
+
+    <script type="text/babel">
+        function App() {
+            const [darkMode, setDarkMode] = React.useState(true);
+
+            const toggleDarkMode = () => {
+                setDarkMode(!darkMode);
+            };
+
+            return (
+                <div className={`${darkMode ? 'bg-gray-900' : 'bg-white text-gray-900'} transition duration-500 ease-in-out`}>
+                    <div className="container mx-auto px-4" style={{ width: '70%' }}>
+                        <header className="flex justify-between items-center py-6">
+                            <a href="./index.html"><h1 className="text-2xl font-bold">DISHANI SEN</h1></a>
+                            <nav className="flex items-center">
+                                <a href="./blog.html" className={`${darkMode ? 'text-white' : 'text-gray-900'} px-4`}>About</a>
+                                <a href="./about.html" className={`${darkMode ? 'text-white' : 'text-gray-900'} px-4`}>Blog</a>
+                                <a href="./resume.pdf" className={`${darkMode ? 'text-white' : 'text-gray-900'} px-4`} target="_blank">Resume</a>
+                                <button onClick={toggleDarkMode} className="ml-4">
+                                    <i className={`fas ${darkMode ? 'fa-sun' : 'fa-moon'}`}></i>
+                                </button>
+                            </nav>
+                        </header>
+<article>
+
+<h1 class="text-4xl font-bold my-6"> 🔒 What is data circularity, and why should you care?</h1>
+
+<div class="text-gray-400 mb-8">Dec 3, 2023 • 8 min • Data</div>
+
+<p class="mb-4">Recently, I attended the Conference on New Techniques and Technologies for Statistics organised by the European Commission from March 6-10th in Brussels. I was pleased to discover several relevant data circularity sessions and conversations. If you are wondering what that is, then this blog is a gentle introduction for you to the what, why, and how of data circularity.</p>
+
+<p class="mb-4">Organisations create and consume massive volumes of data in today's data-driven environment. Data is a key asset that drives decision-making, innovation, and development in everything from organisations to governments to research institutes. Data management strategies, on the other hand, frequently result in data waste, duplication, and underutilisation, which can have significant environmental, economic, and social consequences. The concept of "data circularity" comes into play here. It has emerged as a response to the increasing recognition of the value and impact of data in the digital age. While the phrase "data circularity" is new, the underlying ideas of data reuse and repurposing have been evolving over time. In this blog, we will look at what data circularity is, why it matters, and how companies can use it to unleash the benefits of sustainable data practices.</p>
+
+<h2 class="text-2xl font-bold mb-4">Brief History</h2>
+
+<p class="mb-4">Data was typically kept and maintained in segregated systems in the early days of data management, with little thought given to data reuse or repurposing. But, when businesses began to gather and retain bigger volumes of data, they started to see the value of reusing that data for various purposes such as analysis, reporting, and decision-making. As a result, data warehouses, data marts, and other data management strategies targeted at aggregating and integrating data for greater usage were developed.</p>
+
+<h3 class="text-xl font-bold mb-2">Open data movement:</h3>
+
+<p class="mb-4">The open data movement, which gained momentum in the early 2000s, advocated for making data freely available to the public for reuse and repurposing. Governments, organisations, and communities began publishing datasets openly, enabling access to data for various purposes, such as research, innovation, and accountability. This movement helped drive the concept of data sharing and reuse, promoting the idea that data can have value beyond its original purpose.</p>
+
+<h3 class="text-xl font-bold mb-2">Data sharing initiatives:</h3>  
+
+<p class="mb-4">Over time, various data sharing initiatives emerged across different sectors and domains. For example, in the scientific community, initiatives such as the Human Genome Project and the European Space Agency's Earth Observation Program promoted data sharing among researchers and institutions to accelerate scientific discoveries. In the business world, data sharing platforms and marketplaces began to facilitate the exchange of data between organisations for commercial purposes.</p>
+
+<h3 class="text-xl font-bold mb-2">Circular Economy:</h3>
+
+<p class="mb-4">Sustainability and the circular economy concepts, which emphasise maximising resource usage, limiting waste, and encouraging reuse, have also gained significance in recent years. A circular economy, according to the United Nations Conference on Trade and Development(UNCTAD), is one in which the incentive is provided to the reuse of goods rather than the perpetual re-production and extraction of resources. Data should be circular in the same way that products should be reused rather than wasted and re-produced. The principles of circular economy have been extended to the realm of data, leading to the concept of data circularity. Organisations and researchers have recognized the importance of applying circular economy principles to data management practices, by reusing and repurposing data to minimise waste and maximise value.</p>  
+
+<p class="mb-4">In recent years, there has been a heightened awareness and acceptance of data circularity as a sustainable approach to data management. Businesses are realising the economic, environmental, and social benefits of reusing and repurposing data and adopting data circularity concepts into their data strategy and operations. Data markets, data partnerships, and data sharing programs are evolving, allowing data to be shared, reused, and repurposed in novel ways.</p>
+
+<p class="mb-4">In conclusion, the concept of data circularity has evolved as a response to the growing recognition of the value of data and the need for sustainable data management practices. It builds on earlier developments in data reuse, open data movement, data sharing initiatives, and circular economy principles, and continues to gain momentum as organisations and stakeholders increasingly embrace data circularity as a strategic approach to data management.</p>
+
+
+<p class="mb-4">Let’s touch base now, and look into the formal definition of data circularity.</p>
+
+<h2 class="text-2xl font-bold mb-4">What is Data Circularity?</h2>
+
+
+<p class="mb-4">Data circularity is a holistic approach to data management that encourages a closed-loop system in which data is utilised, shared, and repurposed constantly and sustainably throughout its existence. Data circularity, like the circular economy idea, attempts to minimise waste and improve resource efficiency by improving data consumption, eliminating data waste, and enhancing the value of the data.</p>
+
+<p class="mb-4">Data circularity involves various principles, including:</p>
+
+<ul class="list-disc pl-6 mb-4 space-y-2">
+  <li>Data Reuse: Instead of creating new data, organisations can repurpose existing data for different purposes, reducing the need for data duplication and collection. This can be achieved through data sharing, data integration, and data collaboration among different stakeholders.</li>
+  <li>Data Recycling: Data can be transformed and processed to extract new insights, patterns, and opportunities. Data recycling involves analysing and extracting value from data that would have otherwise been discarded or overlooked.</li>
+  <li>Data Repurposing: Data can be repurposed for different use cases or domains, unlocking new possibilities for innovation. Repurposing data involves leveraging data from one context or industry to another, creating new applications and value-added services.</li>
+  <li>Data Governance: Responsible data governance practices ensure that data is managed ethically, securely, and compliant with relevant regulations. Data governance frameworks establish policies, procedures, and controls to guide data circularity practices and protect privacy, security, and integrity of data.</li>  
+</ul>
+
+<h2 class="text-2xl font-bold mb-4">Why Do We Need Data Circularity?</h2>
+
+<p class="mb-4">Data circularity is vital for a variety of reasons. Some of them are:</p>
+
+<ul class="list-disc pl-6 mb-4 space-y-2">
+  <li>Resource Efficiency: Data is a valuable resource, and circular data practices optimise its utilization, reducing the need for data duplication and collection. This saves resources such as time, money, storage space, and computing power, making data management more efficient and sustainable.</li>
+  <li>Sustainability: Circular data practices align with sustainability principles by minimizing data waste and reducing the environmental impact associated with data storage and processing. This includes reducing energy consumption, minimizing e-waste, and lowering the carbon footprint of data-related activities, contributing to a more sustainable data ecosystem.</li>
+  <li>Innovation and Collaboration: Data circularity fosters innovation by promoting data sharing and collaboration among different stakeholders. By repurposing data, organizations can discover new insights, patterns, and opportunities that can drive innovation in various domains, such as research, business, and policy-making. Collaboration among organizations can also lead to collective intelligence and societal benefits.</li>
+  <li>Privacy and Security: Data circularity emphasizes responsible and ethical data practices, including protecting privacy and ensuring data security. Data governance measures ensure that data is managed in compliance with relevant regulations, protecting the privacy and security of data subjects and sensitive information. This promotes trust and confidence in data management practices.</li>
+  <li>Economic Value: Data circularity can create economic value by unlocking the potential of underutilized or previously discarded data. By maximizing data utilization and sharing, organizations can create new business models, products, and services, leading to economic growth and societal benefits.</li>  
+</ul>
+
+<h2 class="text-2xl font-bold mb-4">How to get started?</h2>
+
+<p class="mb-4">It can be daunting for an organisation to navigate its way through how to adopt and practice data circularity. Embracing data circularity implies a purposeful and systematic approach. Here’s a brief 101 on some important actions that businesses may take to begin with:</p>
+
+<ul class="list-disc pl-6 mb-4 space-y-2">
+  <li>Data governance: Establish robust data governance practices that define data ownership, data quality standards, data sharing policies, and data lifecycle management. This includes having clear data management policies and procedures in place that promote data circularity and responsible data practices.</li>
+  <li>Data sharing and collaboration: Encourage data sharing and collaboration among different stakeholders, both within and outside the organization. This can involve creating data sharing agreements, partnerships, or data collaborations that promote the reuse and repurposing of data for different purposes, while ensuring data security and privacy.</li>
+  <li>Data integration and interoperability: Design data systems and processes that promote data integration and interoperability, enabling data to be seamlessly shared and reused across different platforms, systems, and applications.</li>
+</ul>  
+
+<p class="mb-4">To summarise, data circularity is about altering our whole attitude to data, not simply managing it sustainably. We can create a more inclusive, egalitarian, and sustainable digital future for future generations by embracing data circularity. Data circularity is not just a buzzword; it's a paradigm shift that has the potential to transform the way we think about and utilize data. As we move towards a more data-driven future, it's important for individuals and organizations alike to embrace the principles of data circularity. Let's work together to create a more sustainable and innovative data ecosystem.</p>
+
+</article>
+                        <footer className="flex justify-between items-center py-6">
+                            <p>© Dishani Sen</p>
+                            <div className="flex space-x-4">
+                                <a href="https://x.com/iamdishanisen" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`} target="_blank"><i className="fab fa-twitter"></i></a>
+                                <a href="https://Instagram.com/itsmedishani" className={`${darkMode ? 'text-pink-600' : 'text-pink-400'}`} target="_blank"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.LinkedIn.com/in/dishanisen" className={`${darkMode ? 'text-blue-700' : 'text-blue-500'}`} target="_blank"><i className="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/dishanisen" className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`} target="_blank"><i className="fab fa-github"></i></a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+</html>
